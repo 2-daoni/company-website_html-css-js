@@ -46,7 +46,7 @@ nav i {
 
 .nav-links ul li a {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   font-family: 'Kaisei Tokumin', serif;
 }
@@ -79,7 +79,7 @@ nav .fas {
   font-size: 1.2rem;
 }
 
-.text-box a {
+.btn {
   text-decoration: none;
   color: #fff;
   padding: 12px 34px;
@@ -93,7 +93,7 @@ nav .fas {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.text-box a:hover {
+.btn:hover {
   border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(255, 255, 255, 0);
@@ -105,7 +105,8 @@ nav .fas {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .project h1 {
@@ -130,11 +131,15 @@ nav .fas {
   flex-basis: 31%;
   background: #427388;
   border-radius: 10px;
-  margin-bottom: 5%;
   padding: 2.5rem 2rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   box-sizing: border-box;
   transition: 0.5s;
+}
+
+.project-col img {
+  display: block;
 }
 
 .project-col:hover {
@@ -149,6 +154,7 @@ nav .fas {
 }
 
 .education {
+  font-size: 1.4rem;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -157,9 +163,9 @@ nav .fas {
 
 .education-col {
   flex-basis: 22%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-bottom: 30px;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -174,15 +180,130 @@ nav .fas {
   width: 100%;
   position: absolute;
   top: 0;
-
   transition: 0.5s;
 }
 
 .layer:hover {
-  background: rgba(4, 9, 30, 0.7);
+  background: rgba(4, 9, 30, 0.6);
 }
 
-@media (max-width: 700px) {
+.layer h3 {
+  width: 100%;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.welfare {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.welfare-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.welfare-col img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.welfare-col p {
+  padding: 0;
+}
+
+.welfare-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.worker {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.worker-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: left;
+  background: hsl(179, 15%, 66%);
+  cursor: pointer;
+  display: flex;
+}
+
+.worker-col img {
+  width: 70px;
+  height: 70px;
+  margin: 1rem 1.4rem;
+  border-radius: 50%;
+}
+
+.worker-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.join {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.join h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+.icons .fa {
+  color: #427388;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 25px 0;
+}
+
+/*----------media------------ */
+@media (max-width: 1000px) {
   .nav-links ul li {
     display: block;
   }
